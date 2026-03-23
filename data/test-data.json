@@ -1,0 +1,8 @@
+{
+    "shoppingList": [
+    { "type": "outer", "sort": "SALE_PRICE_ASC" },
+    { "type": "bag", "sort": "SALES_COUNT_DESC" },
+    { "type": "kids", "sort": "DISCOUNT_RATE_DESC" }
+  ],
+  "searchKeyword": "고워크"
+}
