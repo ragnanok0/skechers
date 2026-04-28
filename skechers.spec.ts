@@ -1,9 +1,7 @@
 import { test } from './fixtures/baseFixtures'; // 커스텀 피스쳐 임포트
 import testData from './data/test-data.json';   // 외부 데이터 임포트
 
-test('스케쳐스 (POM) 공부', async ({ page, loginPage, header, productPage, cartPage }) => {
-  test.setTimeout(120000);
-
+test('상품 카테고리 탐색 후 장바구니 담기 E2E 검증', async ({ page, loginPage, header, productPage, cartPage }) => {
   await page.goto('/', { waitUntil: 'domcontentloaded' });
   await page.getByRole('link', { name: '로그인' }).click();
   await loginPage.login();
